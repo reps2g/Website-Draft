@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <title>Hello Beauitful World.. </title>
+        <link rel="stylesheet" href='{% static "css/base.css" %}' /> <!-- href shows location and name of css document for style -->
+    </head>
+    <body>
+        <header>
+            <!-- <img src="{% static "img/1500x1500.png" %}" alt="logo"> -->
+            <div class="navbar">
+                <a href="#aboutme">About Me</a>
+                <a href="contact">Contact Me</a> <!-- hash (#) indicates that it directs you to current page -->
+<!--               <div class="dropdown">
+                  <button class="dropbtn">Dice Roller Application
+                    <i class="fa fa-caret-down"></i>
+                  </button> 
+                  <div class="dropdown-content">
+                    <a href="#">Player 1</a>
+                    <a href="#">Player 2</a>
+                  </div> -->
+                </div>
+              </div>
+        </header>
+
+        <main>
+            <section id="Homepage">
+                <div class="section-inner">
+                    <img src="{% static "img/1500x1500.png" %}" alt="logo" class="profile-img">
+                    <h1>Karl Somanandana</h1>
+                </div>
+            </section>
+
+            <section id="aboutme">  
+                <div class="section-inner">
+                Welcome to my personal webpage.
+                <br><br>
+                <b>A little about myself</b>
+                <br>
+                <li>I am an early career IT professional pivoting from a career in financial services into the IT industry.</li>
+                <li>I have a little over two years experience in client-facing roles.</li>
+                <li>Interested in Networking and Cyber Security related opportunities.</li>
+                <li>Always learning and working on personal projects.</li>
+                <li>Have a BSc(Statistics) & BComm(Accounting) as well as postgraduate coursework in Computing. I am currently studying towards my CCNA and other IT-related certifications.</li>
+                <li>Please contact me using the Contact Me page above for more information or my resume.</li>
+            </section>
+<!--
+            <section id="Portfolio">
+                <div class="section-inner">
+                <h1>Photography Portoflio</h1>
+                <a href="https://www.instagram.com/photoswithkarlos/?hl=en">Instagram</a></li> 
+                <ul>
+                    <img src="{% static "img/jp1.JPG" %}" alt="jp1" class = "thumb-img">
+                    <img src="{% static "img/jp2.JPG" %}" alt="jp2" class = "thumb-img">
+                    <img src="{% static "img/jp3.JPG" %}" alt="jp3" class = "thumb-img">
+            </section>
+        -->
+        </main>
+
+        <footer>
+            © Copyright - Karl Somanandana, 2019
+        </footer>
+    </body>
+</html>
