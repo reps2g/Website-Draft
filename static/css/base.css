@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  margin-top: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  background-color: #000000;
+}
+
+header * {
+  display: inline;
+  height: 50px;
+}
+
+header ul {
+  padding: 0;
+}
+
+header li {
+  margin-left: 20px;
+}
+
+section {
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  background-size: cover; /* Add this line */
+  background-position: center center; /* Add this line */
+  background-repeat: no-repeat; /* Add this line */
+  background-attachment: fixed; /* Add this line */
+}
+
+section {
+  text-align: center;
+}
+
+#Homepage .profile-img {
+  width: 250px;
+  height: 250px;
+
+  border-radius: 50%;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+#Homepage h1 {
+  font-size: 5em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#AboutMe h1 {
+  font-size: 2em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#Portfolio .thumb-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 95%;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Add everything below here */
+
+#Homepage {
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.imgur.com/rVg9lDI.jpg');
+}
+
+#AboutMe {
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.imgur.com/rVg9lDI.jpg');
+}
+
+#Portfolio {
+  background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://i.imgur.com/rVg9lDI.jpg');
+}
+
+
+
+
+
+
+
+
+/* Navigation Bar CSS */
+
+/* Container */
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 23px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 15px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(136, 71, 71);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
